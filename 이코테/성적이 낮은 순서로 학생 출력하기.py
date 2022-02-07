@@ -18,7 +18,7 @@ for _ in range(n):
     name, score = input().split()
     array.append((name, int(score)))
 
-array = sorted(array, key= lambda x:x[1])
+array = sorted(array, key=lambda x: x[1])
 answer = [(i + 1, x[0], x[1] + 5) for i, x in enumerate(array)]
 print(answer)
 for elem in array:
